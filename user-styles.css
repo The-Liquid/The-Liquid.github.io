@@ -14,7 +14,7 @@
     /* color of the whole page */
     --color-background: #ffff00;
     /* color of text elements */
-    --color-foreground: black;
+    --color-foreground: rgb(37, 87, 250);
 }
 
 /* these are settings for all text */

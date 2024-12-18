@@ -5,13 +5,13 @@ meta-description: This is an example of the description
 # whether to show the title on the front page
 show-title: true
 # this shows up on the main page
-title: "Aaron Taylor"
+title: "Aaron T"
 # this is a convenient shortcut to hide the intro text which can be changed in user-intro-text.md
 show-intro-text: false
 # whether to show the background image or not
-show-background: false
+show-background: true
 # optional. will fill the screen. place the image in the user-images folder and add the name of it here
-background-image: sky.png
+background-image: Website background Test.jpg
 # this is just a convenient switch to hide all the images without having to delete the text below
 show-images: false
 # whether to put the images above or below the intro text
@@ -34,20 +34,20 @@ vertical-links: false
 # adding the parameter new-tab and setting it to true will open the link in a new browser tab
 links:
 
-- title: Spotify
-  url: https://open.spotify.com/artist/6TFOalvhHRXh8JmQTVSoyY?si=by2Uv4_pRSGLL92wMk5K3g
+- title: Liquid X
+  url: https://www.youtube.com/@liquid_x
   new-tab: true
 
 - title: Twitter
-  url: http://twitter.com/pedestriantac
+  url: http://twitter.com/Dooble_X
   new-tab: true
   
 - title: Instagram
-  url: http://instagram.com/pedestriantactics
+  url: http://instagram.com/Dooble_X
   new-tab: true
   
 - title: Email
-  url: mailto:hi@pedestriantactics.com
+  url: mailto:talktodooble@gmail.com
 
 - title: Custom page
   url: user-custom-page
