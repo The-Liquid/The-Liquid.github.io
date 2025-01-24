@@ -6,14 +6,20 @@
 </head>
 
 <body>
-    
-    <div id="bg"></div>
-    
+    <div id="video-container">
+        <video autoplay loop muted playsinline>
+            <source
+                src="user-images/Website short.mp4"
+                type="video/mp4"
+            />
+            Your browser does not support the video tag.
+        </video>
+</div>
     <div id="container">
         <div id="index-container">
     <div id="title-container">
         
-        <h1 id="title-text">Aaron T</h1>
+        <h1 id="title-text"></h1>
         
 
         <!-- images above intro text -->
@@ -121,6 +127,29 @@
         background-color: var(--color-background);
         color: var(--color-foreground);
         text-align: center;
+    }
+
+    #video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        z-index: -1; /* Ensure the video stays in the background */
+    }
+
+    #video-container video {
+        /* align to the center and make height 100% */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
     }
 
     body {

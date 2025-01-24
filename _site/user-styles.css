@@ -12,7 +12,7 @@
 
 :root {
     /* color of the whole page */
-    --color-background: #ffff00;
+    --color-background: #000000;
     /* color of text elements */
     --color-foreground: rgb(37, 87, 250);
 }
