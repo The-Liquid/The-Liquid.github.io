@@ -5,10 +5,12 @@ title: Custom page
 <!-- This is a comment. It won't be shown in the final page -->
 
 <!-- This is how you include images. -->
-![Image](user-images/pt-bio-photo.png)
+![Image](user-images/About me photo.JPG)
 
-This is an example of a custom page. This could be used for a bio or any other kind of content. It's written in markdown which is stupid easy. There's a great guide on markdown 
+I grew up learning tones of cool things, along with studying what makes things look cool. 
+
+Now that is my specialty. A deep rich skill for making people, places and things look really cool
 <!-- This is how you include a link -->
-[here](https://itopaloglu83.github.io/Jekyll-Markdown-Cheat-Sheet/).
+[](https://itopaloglu83.github.io/Jekyll-Markdown-Cheat-Sheet/)
 
-Much love - [PT](http://pedestriantactics.com)
+Everyone is cool [](http://pedestriantactics.com)
