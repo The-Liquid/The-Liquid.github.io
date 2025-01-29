@@ -34,7 +34,7 @@ vertical-links: false
 # adding the parameter new-tab and setting it to true will open the link in a new browser tab
 links:
 
-- title: Liquid X
+- title: YouTube
   url: https://www.youtube.com/@liquid_x
   new-tab: true
 

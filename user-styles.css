@@ -5,10 +5,10 @@
 
 /* this is an example of importing a font placed in the user-fonts folder */
 @font-face {
-    font-family: "ZZTalk-Bold";
-    src: url("user-fonts/ZTTalk-Bold.ttf") format("ttf"),
-        url("user-fonts/ZTTalk-Bold.woff2") format("woff2"),
-        url("user-fonts/ZTTalk-Bold.woff") format("woff");
+    font-family: "ZZTalk-Medium";
+    src: url("user-fonts/ZTTalk-Medium.ttf") format("ttf"),
+        url("user-fonts/ZTTalk-Medium.woff2") format("woff2"),
+        url("user-fonts/ZTTalk-Medium.woff") format("woff");
 }
 
 :root {
@@ -21,7 +21,7 @@
 /* these are settings for all text */
 /* replace "Scaffolding" with the name of the font you want to use */
 body, p, #intro-text p, .menu-link, #title-text {
-    font-family: 'ZZTalk-Bold' , 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'ZZTalk-Medium' , 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* this is the title text */
