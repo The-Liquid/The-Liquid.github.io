@@ -1,5 +1,5 @@
 # this will show up on the tab for the site
-meta-title: "PT-DLC5"
+meta-title: "Aaron Taylor"
 # this shows up below the title in a google search result
 meta-description: This is an example of the description
 # whether to show the title on the front page
@@ -49,5 +49,5 @@ links:
 - title: Email
   url: mailto:talktodooble@gmail.com
 
-- title: Custom page
+- title: About Me
   url: user-custom-page
