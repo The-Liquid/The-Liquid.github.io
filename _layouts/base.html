@@ -6,10 +6,13 @@
 </head>
 
 <body>
-    <div id="video-container">
+    <div class="video-container image-container">
+        <img src="user-images/website background frozen shove.jpg">
+</div>
+    <div class="video-container">
         <video autoplay loop muted playsinline>
             <source
-                src="user-images/Website V2 no title.mp4"
+                src="user-images/Website V3.mp4"
                 type="video/mp4"
             />
             Your browser does not support the video tag.
@@ -31,7 +34,7 @@
         text-align: center;
     }
 
-    #video-container {
+    .video-container {
         position: fixed;
         top: 0;
         left: 0;
@@ -43,7 +46,11 @@
         z-index: -1; /* Ensure the video stays in the background */
     }
 
-    #video-container video {
+    .image-container {
+        z-index: -2;
+    }
+
+    .video-container video, .video-container img {
         /* align to the center and make height 100% */
         position: absolute;
         top: 50%;

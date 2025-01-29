@@ -6,10 +6,13 @@
 </head>
 
 <body>
-    <div id="video-container">
+    <div class="video-container image-container">
+        <img src="user-images/website background frozen shove.jpg">
+</div>
+    <div class="video-container">
         <video autoplay loop muted playsinline>
             <source
-                src="user-images/Website V2 no title.mp4"
+                src="user-images/Website V3.mp4"
                 type="video/mp4"
             />
             Your browser does not support the video tag.
@@ -20,7 +23,6 @@
     <!-- This is a comment. It won't be shown in the final page -->
 
 <!-- This is how you include images. -->
-<p><img src="user-images/About me photo.JPG" alt="Image" /></p>
 
 <p>I grew up learning tones of cool things, along with studying what makes things look cool.</p>
 
@@ -29,6 +31,13 @@
 <a href="https://itopaloglu83.github.io/Jekyll-Markdown-Cheat-Sheet/"></a></p>
 
 <p>Everyone is cool <a href="http://pedestriantactics.com"></a></p>
+
+<style>
+    video {
+        visibility: hidden !important; 
+    }
+</style>
+
 
     <div id="back-button" class="custom-page-text">
         <a href="../"></a>
@@ -78,7 +87,7 @@
         text-align: center;
     }
 
-    #video-container {
+    .video-container {
         position: fixed;
         top: 0;
         left: 0;
@@ -90,7 +99,11 @@
         z-index: -1; /* Ensure the video stays in the background */
     }
 
-    #video-container video {
+    .image-container {
+        z-index: -2;
+    }
+
+    .video-container video, .video-container img {
         /* align to the center and make height 100% */
         position: absolute;
         top: 50%;
@@ -112,7 +125,7 @@
         bottom: 0;
         left: 0;
         right: 0;
-        background-image: url("../user-images/Website background Test.jpg");
+        background-image: url("../user-images/");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

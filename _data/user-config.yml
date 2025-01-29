@@ -11,7 +11,7 @@ show-intro-text: false
 # whether to show the background image or not
 show-background: true
 # optional. will fill the screen. place the image in the user-images folder and add the name of it here
-background-image: Website background Test.jpg
+background-image: 
 # this is just a convenient switch to hide all the images without having to delete the text below
 show-images: false
 # whether to put the images above or below the intro text
