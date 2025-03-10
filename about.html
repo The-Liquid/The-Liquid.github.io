@@ -31,17 +31,21 @@
 
 <body>
 	<div id="about-container">
-		<div>
-			<p>My name is Aaron Taylor.</p>
-			<p>I am a video production artist, on-camera personality, and lighting nerd. I have a rich passion for
-				showing
-				the elegance of anything in front of my camera, which has allowed me to work with Ocean Vodka and The
-				Zero
-				Proof on cinematic shorts, cocktail designs, and informative content about their products.
-			</p>
-			<p>
-				I welcome the opportunity to help you visually promote your products or services.
-			</p>
+		<div id="about-content">
+			<img src="about-photo.jpg">
+			<div>
+				<p>My name is Aaron Taylor.</p>
+				<p>I am a video production artist, on-camera personality, and lighting nerd. I have a rich passion for
+					showing
+					the elegance of anything in front of my camera, which has allowed me to work with Ocean Vodka and
+					The
+					Zero
+					Proof on cinematic shorts, cocktail designs, and informative content about their products.
+				</p>
+				<p>
+					I welcome the opportunity to help you visually promote your products or services.
+				</p>
+			</div>
 		</div>
 	</div>
 	<div id="back-container">
@@ -64,6 +68,18 @@
 		gap: 1.5rem;
 	}
 
+	#about-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	#about-content img {
+		height: 320px;
+	}
+
 	#about-container>div {
 		max-width: 55ch;
 	}
@@ -78,9 +94,11 @@
 		justify-content: left;
 	}
 
-	@media screen and ((max-width: 700px) or (max-height: 500px)) {
-		#about-container, #back-container {
-			justify-content: flex-start;
+	@media screen and ((max-width: 700px) or (max-height: 800px)) {
+
+		#about-container,
+		#back-container {
+			align-items: flex-start;
 			position: relative;
 		}
 	}

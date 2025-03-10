@@ -31,21 +31,25 @@
 
 <body>
 	<div class="video-container preload-image-container">
+		<!-- This is where the video still is -->
 		<img src="video-still.jpg">
 	</div>
 	<div class="video-container">
 		<video autoplay loop muted playsinline>
+			<!-- This is where the actual video is -->
 			<source src="video.mp4" type="video/mp4" />
 			Your browser does not support the video tag.
 		</video>
 	</div>
+	<!-- This is the title that pops in before the menu -->
 	<div id="title">
 		<h1>Liquid X</h1>
 	</div>
+	<!-- Here are the links that show up -->
 	<div id="menu-links">
-		<a href=https://www.youtube.com/@liquid_x target="_blank">YouTube</a>
-		<a href=http://instagram.com/Dooble_X target="_blank">Instagram</a>
-		<a href=mailto:talktodooble@gmail.com>Email</a>
+		<a href="https://www.youtube.com/@liquid_x" target="_blank">YouTube</a>
+		<a href="http://instagram.com/Dooble_X" target="_blank">Instagram</a>
+		<a href="http://instagram.com/Dooble_X">Contact</a>
 		<a href="about.html">About</a>
 	</div>
 </body>
@@ -72,7 +76,7 @@
 		height: 100%;
 		object-fit: cover;
 		object-position: center;
-		/* darken the image by 20% */
+		/* darken the image by 30% */
 		filter: brightness(70%);
 	}
 
