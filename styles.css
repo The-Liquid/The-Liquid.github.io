@@ -1,0 +1,57 @@
+/* this is an example of importing a google font */
+/* Locate the font you want and put the name where "Permanent+Marker" is (use + if there's a space in the name) */
+/* When referencing it below, type it like this 'Permanent Marker' */
+@import "https://fonts.googleapis.com/css?family=Permanent+Marker";
+
+/* this is an example of importing a font placed in the user-fonts folder */
+@font-face {
+	font-family: "ZZTalk-Medium";
+	src: url("fonts/ZTTalk-Medium.ttf") format("ttf"),
+		url("fonts/ZTTalk-Medium.woff2") format("woff2"),
+		url("fonts/ZTTalk-Medium.woff") format("woff");
+}
+
+:root {
+	font-size: 18pt;
+	font-family: 'ZZTalk-Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background-color: black;
+	--text-color: white;
+	color: var(--text-color);
+}
+
+a,
+a:visited,
+a:active,
+a:focus,
+a:hover {
+	text-decoration: none;
+	color: var(--text-color);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+h1 {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+/* animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* page fade */
+.fade-in {
+    animation: fadeIn .5s forwards;
+}
+
+.fade-out {
+    animation: fadeOut .5s forwards;
+}

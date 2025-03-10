@@ -1,0 +1,105 @@
+<head>
+	<!-- This website was created using The Template (PT-DLC5) by Pedestrian Tactics -->
+	<title>Aaron Taylor - About</title>
+	<meta title=”description” content=>
+	<!-- TODO -->
+	<link rel="icon" type="image/png" href="/user-favicon.png">
+
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		const links = document.querySelectorAll("a");
+
+		links.forEach(link => {
+			link.addEventListener("click", function (event) {
+				event.preventDefault();
+				const targetUrl = this.href;
+
+				document.body.classList.add("fade-out");
+
+				setTimeout(() => {
+					window.location.href = targetUrl;
+				}, 1000); // Match the duration of the fade-out animation
+			});
+		});
+
+		document.body.classList.add("fade-in");
+	});
+</script>
+
+<body>
+	<div id="about-container">
+		<div id="about-content">
+			<img src="about-photo.jpg">
+			<div>
+				<p>My name is Aaron Taylor.</p>
+				<p>I am a video production artist, on-camera personality, and lighting nerd. I have a rich passion for
+					showing
+					the elegance of anything in front of my camera, which has allowed me to work with Ocean Vodka and
+					The
+					Zero
+					Proof on cinematic shorts, cocktail designs, and informative content about their products.
+				</p>
+				<p>
+					I welcome the opportunity to help you visually promote your products or services.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="back-container">
+		<a href="index.html">Return</a>
+	</div>
+</body>
+
+<style>
+	#about-container {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: 2rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
+	}
+
+	#about-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 2rem;
+	}
+
+	#about-content img {
+		height: 320px;
+	}
+
+	#about-container>div {
+		max-width: 55ch;
+	}
+
+	#back-container {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: 2rem;
+		display: flex;
+		justify-content: left;
+	}
+
+	@media screen and ((max-width: 700px) or (max-height: 800px)) {
+
+		#about-container,
+		#back-container {
+			align-items: flex-start;
+			position: relative;
+		}
+	}
+</style>
