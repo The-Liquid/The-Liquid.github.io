@@ -11,6 +11,7 @@
 <script>
 	document.addEventListener("DOMContentLoaded", function () {
 		const links = document.querySelectorAll("a");
+		const video = document.getElementById("hero-video");
 
 		links.forEach(link => {
 			link.addEventListener("click", function (event) {
@@ -26,6 +27,14 @@
 		});
 
 		document.body.classList.add("fade-in");
+
+		// Pause video initially, then play after 2 seconds
+		if (video) {
+			video.pause();
+			setTimeout(() => {
+				video.play();
+			}, 900); // 2000ms = 2 seconds
+		}
 	});
 </script>
 
@@ -35,7 +44,7 @@
 		<img src="video-still.jpg">
 	</div>
 	<div class="video-container">
-		<video autoplay loop muted playsinline>
+		<video id="hero-video" autoplay loop muted playsinline>
 			<!-- This is where the actual video is -->
 			<source src="video.mp4" type="video/mp4" />
 			Your browser does not support the video tag.
@@ -78,14 +87,6 @@
 		object-position: center;
 		/* darken the image by 30% */
 		filter: brightness(70%);
-	}
-	
-	.video-container video {
-		transition: opacity 1s;
-	}
-	
-	.video-container video {
-		opacity: 1;
 	}
 
 	#title,
